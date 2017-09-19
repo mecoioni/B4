@@ -1,0 +1,50 @@
+/* Copyright (c) 2017, Patrick. All rights reserved. Use of this source code
+   is governed by a BSD-style license that can be found in the LICENSE file. */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+@import '../../../Visurus/Grid/v1/grid.scss';
+@import 'theme';
+
+
+html
+{
+  height: 100%;
+}
+
+body
+{
+  font-size: 0;
+}
+
+a
+{
+  text-decoration: none;
+  color: $color1 !important;
+}
+
+*
+{
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.color-grey-dark
+{
+  color: #888;
+}
+
+.color-grey
+{
+  color: #aaa;
+}
+
+.color-grey-bright
+{
+  color: #ccc;
+}
+
+.color-grey-x-bright
+{
+  color: #eee;
+}
+

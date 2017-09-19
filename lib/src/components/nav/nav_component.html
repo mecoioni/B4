@@ -1,0 +1,19 @@
+<div class="text-right">
+    <ul>
+        <li class="highlighted" [class.filled]="step > 0" (click)="onStepChangeController.add(0)">
+            {{'home' | phrase}}
+        </li>
+        <li [class.highlighted]="step >= 1" [class.filled]="step > 1" (click)="onStepChangeController.add(1)">
+            {{'why-b4' | phrase}}
+        </li>
+        <li [class.highlighted]="step >= 2" [class.filled]="step > 7" (click)="onStepChangeController.add(2)">
+            {{'recipe' | phrase}}
+        </li>
+        <li [class.highlighted]="step >= 8" [class.filled]="step > 8" (click)="onStepChangeController.add(8)">
+            {{'advantages' | phrase}}
+        </li>
+        <li [class.highlighted]="step >= 9" (click)="onStepChangeController.add(9)">
+            {{'contact-us' | phrase}}
+        </li>
+    </ul>
+</div>

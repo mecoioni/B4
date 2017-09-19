@@ -1,0 +1,64 @@
+<div *ngIf="!reloading" style="display: flex; flex-direction: column; min-height: 100vh">
+    <header class="margin-top-large margin-bottom-large">
+        <div class="row">
+            <div class="col text-right">
+                <fo-select
+                        id="language-selector"
+                        class="margin-bottom-none"
+                        [options]="languageOptions"
+                        [selectedModel]="selectedLanguage"
+                        (selectedModelChange)="setLanguage($event)">
+                </fo-select>
+            </div>
+        </div>
+        <div class="row hide-for-small">
+            <div class="l6 m4 col"></div>
+            <div class="l6 m8 col">
+                <hi-nav [(step)]="step"></hi-nav>
+            </div>
+        </div>
+    </header>
+    <div class="row expand collapse">
+        <div class="col" style="flex: 1">
+            <hi-presentation [(step)]="step"></hi-presentation>
+        </div>
+    </div>
+    <div class="row expand padding-top-large padding-bottom-large" id="footer">
+        <div class="col text-center">
+            <div class="row">
+                <div class="l0 m0 s0 col"></div>
+                <div class="l4 m4 col text-center">
+                    <div class="footer-button box-shadow flex-aligner" id="footer-button-1">
+                        <a href="https://hibis.com/le/redflaggame.html" target="_blank">
+                            <h2>
+                                {{'footer-button1-label1-1' | phrase}}
+                                <span class="color-alert">{{'footer-button1-label1-2' | phrase:false}}</span><br />
+                                {{'footer-button1-label1-3' | phrase:false}}
+                            </h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="l4 m4 col text-center">
+                    <div class="footer-button box-shadow" id="footer-button-2">
+                        <a href="https://hibis.com/le/rulebending.html" target="_blank"><h2 class="margin-top-none">{{'footer-button2-label1' | phrase}}</h2></a>
+                    </div>
+                </div>
+                <div class="l4 m4 col text-center">
+                    <div class="footer-button box-shadow flex-aligner" id="footer-button-3">
+                        <h2>
+                            {{'footer-button3-label1' | phrase}}<br />
+                            <a href="https://www.linkedin.com/company/hibis-europe-limited" target="_blank"><img src="gfx/icon-linkedin.png" alt="LinkedIn" /></a>
+                            <a href="https://twitter.com/FraudHibis" target="_blank"><img src="gfx/icon-twitter.png" alt="Twitter" /></a>
+                        </h2>
+                    </div>
+                </div>
+                <div class="l0 m0 s0 col"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row expand collapse background-color-1 color-white" style="flex: 1">
+        <div class="col padding-top-none padding-bottom-none margin-top-none margin-bottom-none">
+            <p class="margin-top-none padding-top-medium text-center">&copy; {{year}} {{'copyright' | phrase}}</p>
+        </div>
+    </div>
+</div>
