@@ -190,7 +190,7 @@ class AppComponent
       "info-sheet" : "Information Sheet",
       "it-finds-you" : "it finds you",
       "recipe" : "B4 Oppskrift",
-      "slide1-subtitle" : "En rask og effektiv løsning (basert på algoritmer og eksperttilsyn) for å identifisere og fjerne uønskede kostnader og risiko"
+      "slide1-subtitle" : "En rask og effektiv løsning (basert på algoritmer og eksperttilsyn) for å identifisere og fjerne uønskede kostnader og risiko",
       "slide1-title" : "Kom deg i forkant av misligheter og korrupsjon",
       "slide2-bullet1" : "Identifiserer leverandører og kunder som utnytter seg av deg",
       "slide2-bullet2" : "Fokuserer på falsk rapportering og hvor det er jukset med tallene",
